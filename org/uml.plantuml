@@ -1,0 +1,17 @@
+@startuml
+
+title HAUGTUNVEIEN 4A
+
+DESCRIBE <|-- ROOM
+ROOM <|-DOWN- HallWay
+
+USE <|-- ITEM
+DESCRIBE <|-- ITEM
+
+WEAPON -UP-|> ITEM
+ARMOR -UP-|> ITEM
+
+ENEMY -UP-|> DESCRIBE
+RAT -UP-|> ENEMY
+
+@enduml
